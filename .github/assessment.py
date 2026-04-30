@@ -1,5 +1,6 @@
 #survey 
 import time
+number=int
 print("welcome to my questionare.")
 time.sleep(1)
 Name=input ("whats your name? ")
