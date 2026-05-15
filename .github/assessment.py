@@ -11,7 +11,7 @@ age=int(input ("Whats your age? "))
 time.sleep(1)
 if age < 8:
     print("youre too young try our questionare for younger ones")
-else:
-    print ("shall we get started")
 if age > 13: 
     print ("just a tad too old. why dont you try out our questionare for older kids")
+elif age:
+    print ("shall we get started")
