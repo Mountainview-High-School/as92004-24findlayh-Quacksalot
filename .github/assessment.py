@@ -34,7 +34,7 @@ time.sleep(0.75)
 print("C, your email address?")
 time.sleep(0.75)
 
-while not (answer == "A" ):
+while not (input == "A" ):
     answer = input ("Is it A, B, Or C? ").upper() 
     if answer == "A":
         print("Correct! A nickname is a great way to protect your identity online.")
@@ -53,7 +53,7 @@ print("B, Keep the text and show an adult you trust?")
 time.sleep(0.75)
 print("C, Text the person back saying something mean to them?")
 time.sleep(0.75)
-while not (answer == "B" ):
+while not (input == "B" ):
     answer = input ("Is it A, B, Or C? ").upper()
     if answer == "B":
         print("Correct! Always show a trusted adult.") 
@@ -73,7 +73,7 @@ print("B, 'Yeah, totally they're evil and deserve it!'?")
 time.sleep(0.75)
 print("C, 'Yes, i think that is agreat idea. Maybe they will understand what it feels like, and stop bulling us!'?")
 time.sleep(0.75)
-while not (answer == "A" ):
+while not (input == "A" ):
     answer = input ("Is it A, B, Or C? ").upper()
     if answer == "A":
         print("Correct! You should never bully somone just because they bully you.")
