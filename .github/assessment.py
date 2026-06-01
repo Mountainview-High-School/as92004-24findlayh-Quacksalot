@@ -34,13 +34,17 @@ time.sleep(0.75)
 print("C, your email address?")
 time.sleep(0.75)
 #figure out how to make it break after three tries
-while not (input == "A" ):
+while not answer == ("A"):
     answer = input ("Is it A, B, Or C? ").upper() 
     if answer == "A":
         print("Correct! A nickname is a great way to protect your identity online.")
     elif answer == "B" or "C": 
         print("Incorrect, Try again.")
-    
+        tries+=1
+    if tries == 3:    
+        break 
+print (tries)
+
 
 
 time.sleep(1)
