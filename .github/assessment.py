@@ -33,12 +33,13 @@ print("B, your name?")
 time.sleep(0.75)
 print("C, your email address?")
 time.sleep(0.75)
-#figure out how to make it break after three tries
+#figure out how to make it break after three tries DONEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
 while not input == ("A"):
     answer = input ("Is it A, B, Or C? ").upper() 
     if answer == "A":
         print("Correct! A nickname is a great way to protect your identity online.")
     elif answer == "B" or "C": 
+        time.sleep(0.75)
         print("Incorrect, Try again.")
         tries+=1
     if tries == 3:    
@@ -63,8 +64,12 @@ while not (input == "B" ):
     if answer == "B":
         print("Correct! Always show a trusted adult.") 
     elif answer == "A" or "C":
+        time.sleep(0.75)
         print("Incorrect, Try again.")
-
+        tries+=1
+    if tries == 3:
+        break
+print (tries)
 
 
 time.sleep(1)
@@ -83,8 +88,12 @@ while not (input == "A" ):
     if answer == "A":
         print("Correct! You should never bully somone just because they bully you.")
     elif answer == "B" or "C":
+        time.sleep(0.75)
         print("Incorrect, Try again.")
-
+        tries+=1
+    if tries == 3: 
+        break
+print (tries)
 
 
 
