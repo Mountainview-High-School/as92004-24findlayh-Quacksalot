@@ -2,17 +2,19 @@
 import time
 number=int
 age=int
+answers = ["A", "B", "A"]
+Questions ["You want to join an online gaming site. Which of the following information is okay for you to post online?", "Someone sends you a text thats is hurtful and makes you feel bad about yourself. what should you do?", "Someone in your class is a real bully. Some of the other people in your class say: 'Let's get them back, and spam them with random texts.' What do you reply?" ]
 tries = 0
 score = 0
 print("welcome to my questionare for online safety.")
 time.sleep(1)
 Name=input ("whats your name? ")
 time.sleep(1)
-age=int(input ("Whats your age? "))
+age=int(input ("Whats your age "+Name))
 #try fix < and > (fixed)
 time.sleep(1)
 if age < 8:
-    print("youre too young try our questionare for younger ones")
+    print("you're too young try our questionare for younger ones")
     exit()
 if age > 13: 
     print ("just a tad too old. why dont you try out our questionare for older kids")
@@ -36,8 +38,10 @@ time.sleep(0.75)
 #figure out how to make it break after three tries DONEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
 while not input == ("A"):
     answer = input ("Is it A, B, Or C? ").upper() 
-    if answer == "A":
+    if answer == answers [0]:
         print("Correct! A nickname is a great way to protect your identity online.")
+        tries+=1
+        break
     elif answer == "B" or "C": 
         time.sleep(0.75)
         print("Incorrect, Try again.")
@@ -61,8 +65,10 @@ print("C, Text the person back saying something mean to them?")
 time.sleep(0.75)
 while not (input == "B" ):
     answer = input ("Is it A, B, Or C? ").upper()
-    if answer == "B":
-        print("Correct! Always show a trusted adult.") 
+    if answer == answers [1]:
+        print("Correct! Always show a trusted adult.")
+        tries+=1
+        break 
     elif answer == "A" or "C":
         time.sleep(0.75)
         print("Incorrect, Try again.")
@@ -85,8 +91,10 @@ print("C, 'Yes, i think that is agreat idea. Maybe they will understand what it 
 time.sleep(0.75)
 while not (input == "A" ):
     answer = input ("Is it A, B, Or C? ").upper()
-    if answer == "A":
+    if answer == answers [2]:
         print("Correct! You should never bully somone just because they bully you.")
+        tries+=1
+        break 
     elif answer == "B" or "C":
         time.sleep(0.75)
         print("Incorrect, Try again.")
@@ -95,8 +103,6 @@ while not (input == "A" ):
         break
 print (tries)
 
-
-
-
+print ("thank you "+Name+" for participating")
 
 
